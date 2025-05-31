@@ -1,0 +1,12 @@
+
+AWSTemplateFormatVersion: 2010-09-09
+Description: A sample CloudFormation template with YAML comments.
+# Resources section
+Resources:
+  MyEC2Instance: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      # Linux AMI
+      ImageId: ami-0953476d60561c955
+      InstanceType: t2.micro
+      KeyName: demo-1
